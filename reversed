@@ -1,0 +1,10 @@
+def reversed (list : List[Int]): List[Int] = {
+    list match{
+	case Nil => list
+        case (head :: tail) => reversed(tail) ::: list(head)
+    }
+}
+
+val list = List(1,2,3,4,5)
+val ters = reverved(list)
+println("listenin tersi : " + ters)
