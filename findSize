@@ -1,0 +1,18 @@
+def size (list : List[Int]):Int {
+val sayac=0
+    if(list.head != Nil) {
+	
+	if(tail.isEmpty) {
+	   sayac=1  	
+        }
+	else {
+           sayac=sayac+1
+           size(list.tail)  
+ 	}
+    }
+    else {
+       return sayac; 
+    }		
+ }
+
+size(1,2,3,4,5);
